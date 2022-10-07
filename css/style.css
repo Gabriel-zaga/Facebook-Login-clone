@@ -1,0 +1,129 @@
+@font-face {
+    font-family: segoeUi;
+    src: url(../Segoe\ UI.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    background-color:#f0f2f5;
+    display:flex;
+    justify-content: center;
+}
+img{
+    width:200px;
+}
+.text p{
+    font-family: segoeUi;
+    font-size:23px;
+    font-weight:500;
+    color:#1c2f32;
+}
+main{
+    display:flex;
+    gap:5rem;
+    margin:150px;
+}
+.text{
+    max-width:400px;
+}
+.container{
+    background-color: #ffffff;
+    max-width:400px;
+    height:350px;
+    margin-top:-50px;
+    border-radius:7px;
+    box-shadow:0 0 20px -13px #555;
+
+}
+.container form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:10px;
+}
+.container form input{
+    padding:13px;
+    margin:5px 10px;
+}
+input[type="email"], input[type="password"]{
+    border:solid 1px #ebedee;
+    border-radius:5px;
+    font-size:18px;
+    font: weight 50px;
+    font-family:segoeUi;
+}
+input[type="email"], input[type="password"]::-moz-placeholder{
+    color:#ebedee;
+}
+input[type="submit"]{
+    background-color: #1877f2;
+    border-radius:5px;
+    border:none;
+    font-size:18px;
+    font-weight: 800;
+    color:white;
+}
+input[type="submit"]:hover{
+    background-color:#166fe5;
+}
+.other{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+.other a{
+    color: #308cf3;
+    font-family:segoeUi;
+    text-decoration:none;
+}
+.other p{
+width:370px;
+height:1px;
+background-color:#ebedee;
+margin:15px;
+}
+.other button{
+    background-color: #42b72a;
+    padding:15px;
+    font-size:16px;
+    font-weight:700;
+    color:white;
+    border:none;
+    border-radius:7px;
+    margin:15px;
+}
+.other button:hover{
+    background-color:#36a420;
+}
+.link-page{
+    font-family:segoeUi;
+    color:black;
+}
+.link-page a{
+    font-weight:600;
+    text-decoration:none;
+    color:black;
+}
+
+@media (max-width: 800px){
+    main{
+        display:flex;
+        gap:5rem;
+        margin:100px;
+        flex-direction: column;
+    }
+    .text{
+        max-width:380px;
+    }
+    .container{
+        max-width:380px;
+        height:350px;
+        margin-top:-50px;
+        
+
+    }
+}
